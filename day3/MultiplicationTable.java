@@ -1,18 +1,15 @@
 import java.util.Scanner;
 
-public class Positiveornegative {
+public class MultiplicationTable {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter number: ");
         int n = sc.nextInt();
 
-        if (n > 0)
-            System.out.println("Positive");
-        else if (n < 0)
-            System.out.println("Negative");
-        else
-            System.out.println("Zero");
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(n + " x " + i + " = " + (n * i));
+        }
 
         sc.close();
     }

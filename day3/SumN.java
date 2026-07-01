@@ -1,14 +1,17 @@
 import java.util.Scanner;
 
-public class Cudeofnumber {
+public class SumN {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter number: ");
         int n = sc.nextInt();
+        int sum = 0;
 
-        System.out.println("Cube = " + (n * n * n));
+        for (int i = 1; i <= n; i++) {
+            sum += i;
+        }
 
+        System.out.println("Sum = " + sum);
         sc.close();
     }
 }
